@@ -4,4 +4,6 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - run: exit -1
+      - uses: actions/checkout@v2
+      - run: ls
+      - run: cd src && python3 main.py
