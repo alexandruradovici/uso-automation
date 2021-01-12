@@ -1,9 +1,8 @@
 name: syntax
 on: push
 jobs:
-  say-hello:
+  run-with-python3:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: ls
       - run: cd src && python3 main.py
