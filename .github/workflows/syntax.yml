@@ -9,7 +9,7 @@ jobs:
         with:
           python-version: 3.7
       - run: echo Tester works
-      - run: gcc
+      - run: gcc -v
       - run: python src/main.py
   windows:
     runs-on: windows-latest
