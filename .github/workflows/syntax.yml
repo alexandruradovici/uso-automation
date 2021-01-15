@@ -1,8 +1,17 @@
 name: syntax
 on: push
 jobs:
-  task1:
+  linux:
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - run: echo Tester works
+      - run: python3 src/main.py
+  windows:
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
