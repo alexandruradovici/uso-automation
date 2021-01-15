@@ -4,5 +4,5 @@ jobs:
   task1:
     runs-on: ubuntu-latest
     steps:
-      run: echo Tester works
+      - run: echo Tester works
       
